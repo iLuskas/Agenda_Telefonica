@@ -15,8 +15,8 @@ CREATE TABLE if not exists contatos
 
 create table if not exists cadastro(
   iduser int(11) not null auto increment,
-  nome_usuario varchar(50) not null, 
-  email_usuario varchar(50) not null,
+  nome_usuario varchar(50) not null unique, 
+  email_usuario varchar(50) not null unique,
   senha_usuario varchar(8) not null,
   primary key(iduser)
 )DEFAULT CHARSET = utf8;;
